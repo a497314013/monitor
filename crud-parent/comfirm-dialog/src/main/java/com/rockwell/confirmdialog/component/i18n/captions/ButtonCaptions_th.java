@@ -1,0 +1,33 @@
+package com.rockwell.confirmdialog.component.i18n.captions;
+
+import java.util.ListResourceBundle;
+
+import com.rockwell.confirmdialog.ButtonType;
+
+
+/**
+ * I18n for the button captions. This class contains the translations for language code 'th'.
+ */
+public class ButtonCaptions_th extends ListResourceBundle {
+
+    /**
+     * See {@link ListResourceBundle#getContents()}
+     */
+    @Override
+    protected Object[][] getContents() {
+        return new Object[][]{
+                {ButtonType.OK.name(), "ตกลง"},
+                {ButtonType.ABORT.name(), "ยุติ"},
+                {ButtonType.CANCEL.name(), "ยกเลิก"},
+                {ButtonType.YES.name(), "ใช่"},
+                {ButtonType.NO.name(), "ไม่"},
+                {ButtonType.CLOSE.name(), "ปิด"},
+                {ButtonType.SAVE.name(), "บันทึก"},
+                {ButtonType.RETRY.name(), "ลองใหม่"},
+                {ButtonType.IGNORE.name(), "ไม่สนใจ"},
+                {ButtonType.HELP.name(), "ช่วยเหลือ"},
+        };
+    }
+
+}
+

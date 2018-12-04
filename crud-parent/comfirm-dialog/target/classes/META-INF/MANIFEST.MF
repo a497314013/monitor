@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: confirm-dialog
+Implementation-Version: 1.0.1-SNAPSHOT
+Vaadin-Package-Version: 1
+Built-By: Administrator
+Implementation-Vendor-Id: com.rockwell
+Build-Jdk: 1.8.0_144
+Implementation-URL: http://maven.apache.org/confirm-dialog
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Carlos Laspina
+
