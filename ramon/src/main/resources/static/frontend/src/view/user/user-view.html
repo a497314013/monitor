@@ -1,0 +1,58 @@
+<link rel="import" href="../../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../../bower_components/vaadin-ordered-layout/src/vaadin-vertical-layout.html">
+<link rel="import" href="../../../bower_components/vaadin-ordered-layout/src/vaadin-horizontal-layout.html">
+<link rel="import" href="../../../bower_components/iron-form/iron-form.html">
+<link rel="import" href="../../../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../../../bower_components/vaadin-icons/vaadin-icons.html">
+<link rel="import" href="../../../bower_components/vaadin-text-field/src/vaadin-text-field.html">
+<link rel="import" href="../../../bower_components/vaadin-text-field/src/vaadin-password-field.html">
+<link rel="import" href="../../../bower_components/vaadin-button/src/vaadin-button.html">
+<link rel="import" href="../../../bower_components/vaadin-form-layout/src/vaadin-form-layout.html">
+<link rel="import" href="../../../bower_components/vaadin-form-layout/src/vaadin-form-item.html">
+
+
+
+
+<dom-module id="user-view">
+    <template>
+<style include="shared-styles">
+            :host {
+                display: block;
+            }
+        </style>
+<vaadin-vertical-layout style="width: 100%; height: 100%;"></vaadin-vertical-layout>
+<vaadin-horizontal-layout style="width: 100%; height: 45px; border-bottom: 1px solid red;" border="">
+ <vaadin-button>
+   查询 
+  <iron-icon icon="vaadin:search"></iron-icon>
+ </vaadin-button>
+ <vaadin-button>
+  重置
+  <iron-icon icon="vaadin:eraser"></iron-icon>
+ </vaadin-button>
+</vaadin-horizontal-layout>
+<div class="filterbox" style="width: 100%; height: 200px;border:1px solid blue;">
+ <vaadin-form-layout>
+  <vaadin-form-item style="width:100%;broder:1px solid red;float:left;">
+   <label>Label</label>
+   <input value="Value">
+  </vaadin-form-item>
+ </vaadin-form-layout>
+</div>
+</template>
+
+    <script>
+        class UserView extends Polymer.Element {
+            static get is() {
+                return 'user-view';
+            }
+
+            static get properties() {
+                return {
+                    // Declare your properties here.
+                };
+            }
+        }
+        customElements.define(UserView.is, UserView);
+    </script>
+</dom-module>

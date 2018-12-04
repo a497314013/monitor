@@ -20,8 +20,6 @@
   
   <modules>
 	  <module>ramon</module>
-	  
-	  <module>page-grid</module>
 	  <module>crud-parent</module>
   </modules>
   

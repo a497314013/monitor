@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.tab_icon:hover {
+	cursor: pointer;
+	background-color: gray;
+}
+.tab_button {
+	margin-top:0%;
+	margin-left:55%;
+}
+
+.tab_icon {
+	margin-bottom: -100%;
+}
